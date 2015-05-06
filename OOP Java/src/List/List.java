@@ -75,7 +75,7 @@ public class List {
 	}
 	
 	public void remove(int elementIndex) {
-		if(this.listCount <= elementIndex) {
+		if(this.listCount <= elementIndex || elementIndex > 0) {
 			Node currentHead = this.firstElem;
 			for (int i = 1; i < elementIndex; i++) {
 				currentHead = currentHead.getNext();
